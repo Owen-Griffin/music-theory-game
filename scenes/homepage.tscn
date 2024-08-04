@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmqdmkbeuitfg"]
+
+[ext_resource type="Theme" uid="uid://dskhb6bratu4n" path="res://themes/default_theme.tres" id="1_p2nc8"]
+
+[node name="Homepage" type="Node2D"]
+
+[node name="Background" type="ColorRect" parent="."]
+offset_top = 69.0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="Content" type="Node2D" parent="."]
+
+[node name="Title" type="RichTextLabel" parent="Content"]
+offset_top = 69.0
+offset_right = 1152.0
+offset_bottom = 176.0
+theme = ExtResource("1_p2nc8")
+theme_override_font_sizes/normal_font_size = 75
+bbcode_enabled = true
+text = "[center]TheoryGriffin[/center]"
+
+[node name="BodyText" type="RichTextLabel" parent="Content"]
+offset_left = 23.0
+offset_top = 162.0
+offset_right = 1132.0
+offset_bottom = 602.0
+theme = ExtResource("1_p2nc8")
+theme_override_font_sizes/normal_font_size = 25
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget ante pellentesque tellus euismod elementum eget non lacus. Quisque consectetur pharetra diam, ut mollis metus ullamcorper nec. Proin at molestie velit. Duis fringilla bibendum nunc id scelerisque. Fusce at purus nunc. Duis euismod mauris sit amet vulputate vulputate. Morbi tortor diam, maximus id sapien vitae, viverra fermentum leo. Nulla leo mi, ultricies sed porta non, ullamcorper eu arcu. Sed aliquet lacus lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+Nulla facilisi. Nam magna leo, volutpat ut pharetra eget, fringilla eu nisl. Sed iaculis blandit diam, pulvinar commodo eros condimentum at. In in pretium neque. Aliquam maximus consectetur ante, non pharetra erat faucibus ut. Praesent vel maximus risus. Cras nisi augue, ultrices quis vulputate vel, auctor sed metus. Donec pulvinar tincidunt est, a cursus odio fermentum vitae. Ut tempor semper volutpat. Pellentesque sodales dolor eget justo iaculis aliquam. Integer finibus, nunc sed euismod ornare, elit leo gravida mi, in ultricies velit ipsum non velit.
+
+Maecenas id tempor dui. Donec viverra aliquam enim at molestie. Sed vehicula erat purus, in lobortis dui vulputate vel. Cras eleifend commodo neque, at rutrum turpis rhoncus sed. Duis egestas faucibus finibus. Donec eget justo id massa cursus vestibulum eget ultrices dolor. Integer et lacus sed libero mattis malesuada. Sed condimentum nunc in quam tincidunt, in ultricies dolor fringilla. Sed tempus, odio finibus convallis dictum, quam sem semper neque, id blandit sapien ipsum vitae justo. Mauris vitae massa laoreet, elementum est at, aliquet nisl. Maecenas nunc sapien, dapibus quis tempus sit amet, fermentum sed metus. Suspendisse feugiat eleifend nibh. Integer id arcu tempus, scelerisque enim ac, dictum velit. Fusce viverra vitae tellus ac posuere. In facilisis leo quam, quis commodo risus porttitor sed. In elementum iaculis venenatis.
+
+Nam vulputate at ante non vehicula. Sed imperdiet placerat nibh vel tincidunt. Pellentesque sit amet quam nisi. Suspendisse leo sapien, commodo ut tellus vel, faucibus vehicula nulla. Nam eu turpis non tortor gravida porta. Vivamus libero lectus, malesuada in odio non, vehicula blandit quam. Sed tempus risus orci, nec malesuada lectus maximus vitae. Fusce mollis dui tortor, sed semper odio faucibus et. Vestibulum dapibus iaculis arcu quis vehicula. Quisque in vestibulum sapien. Pellentesque viverra varius lacus id elementum. Quisque dignissim libero nec vehicula bibendum. Proin sodales sem vel faucibus malesuada. Sed ipsum nunc, sodales non efficitur eget, sollicitudin et diam.
+
+Proin non tincidunt nulla, quis luctus erat. Duis neque neque, condimentum in dui porta, volutpat tincidunt justo. In vel sapien vitae nisl bibendum pellentesque. Quisque velit orci, placerat a finibus sit amet, dignissim ut libero. Suspendisse consequat metus in tristique ultricies. Vestibulum sit amet laoreet tortor. Mauris venenatis viverra quam. Sed lacinia quis nibh id sagittis. Nunc ullamcorper dui ac augue pulvinar, a suscipit quam tempus. "
