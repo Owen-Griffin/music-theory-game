@@ -1,0 +1,87 @@
+[gd_scene load_steps=6 format=3 uid="uid://baffg5mrb2s2l"]
+
+[ext_resource type="Theme" uid="uid://dskhb6bratu4n" path="res://themes/default_theme.tres" id="1_p2nc8"]
+[ext_resource type="Script" path="res://scripts/ExerciseSelector.gd" id="2_27md6"]
+[ext_resource type="Script" path="res://scripts/ContactPopup.gd" id="2_btutf"]
+[ext_resource type="PackedScene" uid="uid://bmqdmkbeuitfg" path="res://scenes/homepage.tscn" id="4_5h6lp"]
+[ext_resource type="PackedScene" uid="uid://crnfud1x8yvea" path="res://scenes/interval_identification.tscn" id="4_343td"]
+
+[node name="Homepage" type="Node2D"]
+
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(1, 0.329412, 0.403922, 1)
+
+[node name="TopBar" type="Node2D" parent="."]
+
+[node name="Background" type="ColorRect" parent="TopBar"]
+offset_right = 1152.0
+offset_bottom = 69.0
+color = Color(0.873298, 0.873298, 0.873298, 1)
+
+[node name="TitleLabel" type="RichTextLabel" parent="TopBar"]
+offset_left = 12.0
+offset_top = 9.0
+offset_right = 257.0
+offset_bottom = 59.0
+theme = ExtResource("1_p2nc8")
+text = "TheoryGriffin"
+
+[node name="ExerciseSelector" type="MenuButton" parent="TopBar"]
+offset_left = 285.0
+offset_top = 7.0
+offset_right = 493.0
+offset_bottom = 63.0
+theme = ExtResource("1_p2nc8")
+text = "Exercises"
+item_count = 2
+popup/item_0/text = "Interval Identification"
+popup/item_0/id = 0
+popup/item_1/text = "Option B"
+popup/item_1/id = 1
+script = ExtResource("2_27md6")
+
+[node name="ContactButton" type="Button" parent="TopBar"]
+offset_left = 911.0
+offset_top = 8.0
+offset_right = 1143.0
+offset_bottom = 64.0
+theme = ExtResource("1_p2nc8")
+text = "Contact Me"
+
+[node name="ContactPopup" type="Node2D" parent="."]
+visible = false
+script = ExtResource("2_btutf")
+
+[node name="Background" type="ColorRect" parent="ContactPopup"]
+offset_left = 64.0
+offset_top = 110.0
+offset_right = 1079.0
+offset_bottom = 569.0
+color = Color(0.87451, 0.87451, 0.87451, 1)
+
+[node name="TitleLabel" type="RichTextLabel" parent="ContactPopup"]
+offset_left = 67.0
+offset_top = 113.0
+offset_right = 1076.0
+offset_bottom = 161.0
+theme = ExtResource("1_p2nc8")
+bbcode_enabled = true
+text = "[center]Contact[/center]"
+
+[node name="BodyLabel" type="RichTextLabel" parent="ContactPopup"]
+offset_left = 303.0
+offset_top = 180.0
+offset_right = 873.0
+offset_bottom = 358.0
+theme = ExtResource("1_p2nc8")
+theme_override_font_sizes/normal_font_size = 25
+text = "Please contact me or send any feedback you have to me @ogriffin2640 on Instagram/Discord"
+
+[node name="Homepage" parent="." instance=ExtResource("4_5h6lp")]
+
+[node name="IntervalIdentification" parent="." instance=ExtResource("4_343td")]
+visible = false
+
+[connection signal="pressed" from="TopBar/ContactButton" to="ContactPopup" method="_on_contact_button_pressed"]

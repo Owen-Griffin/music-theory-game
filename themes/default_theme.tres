@@ -1,0 +1,26 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://dskhb6bratu4n"]
+
+[ext_resource type="FontFile" uid="uid://b1jbpojcntcrk" path="res://assets/fonts/Rubik/Rubik-VariableFont_wght.ttf" id="1_djq4u"]
+[ext_resource type="FontFile" uid="uid://dflgxwpj78jm5" path="res://assets/fonts/Rubik/Rubik-Regular.ttf" id="1_haffh"]
+
+[resource]
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/font_sizes/font_size = 40
+Button/fonts/font = ExtResource("1_djq4u")
+CheckButton/colors/font_color = Color(0, 0, 0, 1)
+CheckButton/font_sizes/font_size = 40
+CheckButton/fonts/font = ExtResource("1_djq4u")
+CheckButton/icons/unchecked_mirrored = null
+MenuButton/colors/font_color = Color(0, 0, 0, 1)
+MenuButton/font_sizes/font_size = 40
+MenuButton/fonts/font = ExtResource("1_haffh")
+OptionButton/colors/font_color = Color(0, 0, 0, 1)
+OptionButton/font_sizes/font_size = 40
+OptionButton/fonts/font = ExtResource("1_djq4u")
+RichTextLabel/colors/default_color = Color(0, 0, 0, 1)
+RichTextLabel/font_sizes/bold_font_size = 40
+RichTextLabel/font_sizes/bold_italics_font_size = 40
+RichTextLabel/font_sizes/italics_font_size = 40
+RichTextLabel/font_sizes/mono_font_size = 40
+RichTextLabel/font_sizes/normal_font_size = 40
+RichTextLabel/fonts/normal_font = ExtResource("1_haffh")
