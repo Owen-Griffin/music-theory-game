@@ -7,8 +7,7 @@ func _ready():
 func on_MenuButton_id_pressed(id):
 	match id:
 		0:
-			print(0, 'interval identification')
 			$"../../IntervalIdentification".show()
 			$"../../Homepage".hide()
 		1:
-			print(1, 'option b')
+			pass
