@@ -1,0 +1,111 @@
+[gd_scene load_steps=2 format=3 uid="uid://c12pryywqlv42"]
+
+[ext_resource type="Theme" uid="uid://dskhb6bratu4n" path="res://themes/default_theme.tres" id="1_q7eq6"]
+
+[node name="PerfectPitch" type="Node2D"]
+
+[node name="Background" type="ColorRect" parent="."]
+offset_top = 69.0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="ConfigPage" type="Node2D" parent="."]
+
+[node name="Title" type="RichTextLabel" parent="ConfigPage"]
+offset_left = 11.0
+offset_top = 79.0
+offset_right = 1145.0
+offset_bottom = 137.0
+theme = ExtResource("1_q7eq6")
+theme_override_font_sizes/normal_font_size = 0
+bbcode_enabled = true
+text = "[center]Perfect Pitch Test[/center]"
+metadata/_edit_use_anchors_ = true
+
+[node name="Description" type="RichTextLabel" parent="ConfigPage"]
+offset_left = 331.0
+offset_top = 135.0
+offset_right = 844.0
+offset_bottom = 269.0
+theme = ExtResource("1_q7eq6")
+theme_override_font_sizes/normal_font_size = 25
+text = "You will hear a single note. Your goal is to identify the name of the note."
+metadata/_edit_use_anchors_ = true
+
+[node name="NotesLabel" type="RichTextLabel" parent="ConfigPage"]
+offset_left = 94.0
+offset_top = 244.0
+offset_right = 323.0
+offset_bottom = 277.0
+theme = ExtResource("1_q7eq6")
+theme_override_font_sizes/normal_font_size = 25
+text = "Intervals"
+metadata/_edit_use_anchors_ = true
+
+[node name="NotesSelector" type="OptionButton" parent="ConfigPage"]
+offset_left = 321.0
+offset_top = 237.0
+offset_right = 861.0
+offset_bottom = 276.0
+theme = ExtResource("1_q7eq6")
+theme_override_font_sizes/font_size = 25
+item_count = 4
+selected = 0
+popup/item_0/text = "Simple (C, D, E)"
+popup/item_0/id = 0
+popup/item_1/text = "Advanced (C, D, E, F, G)"
+popup/item_1/id = 1
+popup/item_2/text = "C Scale (C, D, E, F, G, A, B)"
+popup/item_2/id = 2
+popup/item_3/text = "Chromatic (All)"
+popup/item_3/id = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="QuestionsLabel" type="RichTextLabel" parent="ConfigPage"]
+offset_left = 93.0
+offset_top = 283.0
+offset_right = 322.0
+offset_bottom = 319.0
+theme = ExtResource("1_q7eq6")
+theme_override_font_sizes/normal_font_size = 25
+text = "Questions"
+metadata/_edit_use_anchors_ = true
+
+[node name="QuestionSelector" type="SpinBox" parent="ConfigPage"]
+offset_left = 322.0
+offset_top = 288.0
+offset_right = 405.063
+offset_bottom = 319.0
+theme = ExtResource("1_q7eq6")
+metadata/_edit_use_anchors_ = true
+
+[node name="QuestionsInfo" type="RichTextLabel" parent="ConfigPage"]
+offset_left = 401.0
+offset_top = 291.0
+offset_right = 635.0
+offset_bottom = 317.0
+theme = ExtResource("1_q7eq6")
+theme_override_colors/default_color = Color(0.344076, 0.344076, 0.344076, 1)
+theme_override_font_sizes/normal_font_size = 15
+text = "Leave as 0 for infinite questions"
+metadata/_edit_use_anchors_ = true
+
+[node name="Hotkeys Info" type="RichTextLabel" parent="ConfigPage"]
+visible = false
+offset_left = 313.0
+offset_top = 433.0
+offset_right = 846.0
+offset_bottom = 459.0
+theme = ExtResource("1_q7eq6")
+theme_override_colors/default_color = Color(0.344076, 0.344076, 0.344076, 1)
+theme_override_font_sizes/normal_font_size = 15
+text = "Hotkeys to quickly select answers are shown in [ ] next to each option."
+metadata/_edit_use_anchors_ = true
+
+[node name="StartPerfectPitchQuiz" type="Button" parent="ConfigPage"]
+offset_left = 430.0
+offset_top = 493.0
+offset_right = 715.0
+offset_bottom = 588.0
+theme = ExtResource("1_q7eq6")
+text = "Start Quiz"

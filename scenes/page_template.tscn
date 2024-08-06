@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://pleygu8tbh1j"]
+
+[node name="Template" type="Node2D"]
+
+[node name="Background" type="ColorRect" parent="."]
+offset_top = 69.0
+offset_right = 1152.0
+offset_bottom = 648.0
